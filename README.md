@@ -1,6 +1,6 @@
-## rofi simple picker
+## simple-rofi-picker
 
-rofi-simple-picker is a project designed to create quick and efficient menus for launching virtually anything. 
+simple-rofi-picker is a project designed to create quick and efficient menus for launching virtually anything. 
 It leverages Rofi as the user interface and utilizes a JSON configuration file to define various options.
 A Python script automates launching the picker and starting a process composed of a given base command and the selected option's value.
 
