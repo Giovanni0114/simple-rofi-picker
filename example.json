@@ -1,0 +1,19 @@
+{
+    "name": "notifier",
+    "base_command": "notify-send '%1'",
+    "case_sensitive": true,
+    "options": [
+        {
+            "label": "One [1]",
+            "value": "one"
+        },
+        {
+            "label": "Two [2]",
+            "value": "two"
+        },
+        {
+            "label": "Three [2]",
+            "value": "three"
+        }
+    ]
+}
