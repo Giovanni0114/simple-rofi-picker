@@ -34,3 +34,4 @@ def validate_json_data(data: Any):
         for name, t in TYPES_IN_CONFIG_ROOT:
             if name not in data or not isinstance(data[name], t):
                 raise ValueError(f"Missing or invalid '{name}' field")
+

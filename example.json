@@ -1,6 +1,6 @@
 {
     "name": "notifier",
-    "base_command": "notify-send '%1'",
+    "base_command": "notify-send %1",
     "case_sensitive": true,
     "options": [
         {

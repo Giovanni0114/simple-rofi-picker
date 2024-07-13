@@ -7,7 +7,7 @@ import config
 import rofi_runner
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Process a JSON configuration file for Notifier.')
+    parser = argparse.ArgumentParser(description='Process a JSON configuration file for Picker.')
     parser.add_argument('filepath', type=str, help='Path to the JSON configuration file')
     args = parser.parse_args()
 
