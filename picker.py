@@ -3,24 +3,20 @@
 import json
 import argparse
 
-import config
-import rofi_runner
+from config import Config
+from rofi_runner import RofiRunner
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process a JSON configuration file for Picker.')
-    parser.add_argument('filepath', type=str, help='Path to the JSON configuration file')
+    parser.add_argument('filepath', type=str, help='Path to the JSON configuration file', default="-")
     args = parser.parse_args()
 
     try:
-        conf = config.Config()
-        conf.load_from_file(args.filepath)
+        Config.init(args.filepath)
     except (FileNotFoundError, json.JSONDecodeError) as e:
-        print(f"Error reading JSON file: {e}")
-        exit(1)
+        parser.exit(1, f"Error reading JSON file: {e}\n")
     except ValueError as e:
-        print(f"Validation error: {e}")
-        exit(2)
+        parser.exit(2, f"Validation error: {e}\n")
 
-    runnner = rofi_runner.RofiRunner()
-    runnner.run()
+    RofiRunner.run()
 

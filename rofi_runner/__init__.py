@@ -1,5 +1,5 @@
 import subprocess
-from config import Config, Option
+from config import Config
 
 class Result:
     success: bool
@@ -17,28 +17,22 @@ class Result:
 
 
 class RofiRunner:
-    last_result = None | Result
+    def get_rofi_command() -> str:
+        case_ses = '-i' if Config.get_case_sensitive() else ''
+        options_entry = "\n".join(Config.get_options_labels())
+        return f'echo -e "{options_entry}" | rofi -dmenu {case_ses} -p "{Config.get_name()}"'
 
-    def get_rofi_command(self) -> str:
-        conf = Config()
-        return f'echo -e "{"\n".join(conf.get_options_labels())}" | rofi -dmenu {'-i' if conf.case_sensitive else ''} -p "{conf.name}"'
-
-    def select_option(self) -> Option:
-        rofi_command = self.get_rofi_command()
+    def run() -> Result:
+        rofi_command = RofiRunner.get_rofi_command()
         option_label = subprocess.run(rofi_command, shell=True, capture_output=True, text=True).stdout.strip()
-        return Config().get_option_by_label(option_label)
+        option = Config.get_option_by_label(option_label)
 
-    def run(self) -> Result:
-        conf = Config()
-        if not conf.is_valid():
-            res = Result(False, "Invalid config")
-            self.last_result = res
-            return res
+        if not option:
+            return Result(False, "No such option")
 
-        option = self.select_option()
+        command = Config.get_base_command().replace("%1", option.value)
+        if subprocess.run(command, shell=True).returncode != 0:
+            return Result(False, "Error during execution")
 
-        command = conf.get_base_command().replace("%1", option.value)
-
-        if command:
-            subprocess.run(command, shell=True)
+        return Result(True)
 
