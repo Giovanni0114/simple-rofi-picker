@@ -1,0 +1,311 @@
+{
+  "name": "websites",
+  "base_command": "brave-browser-nightly %1",
+  "case_sensitive": false,
+  "options": [
+    {
+      "value": "excalidraw.com",
+      "label": "excalidraw.com: Excalidraw notepad."
+    },
+    {
+      "value": "doc.new",
+      "label": "doc.new: New Google Doc."
+    },
+    {
+      "value": "sheet.new",
+      "label": "sheet.new: New Google sheet."
+    },
+    {
+      "value": "slide.new",
+      "label": "slide.new: New Google Slide."
+    },
+    {
+      "value": "form.new",
+      "label": "form.new: New Google form."
+    },
+    {
+      "value": "meet.new",
+      "label": "meet.new: New video call with Google Meet."
+    },
+    {
+      "value": "meeting.new",
+      "label": "meeting.new: New Google Calendar event."
+    },
+    {
+      "value": "cal.new",
+      "label": "cal.new: New Google Calendar event."
+    },
+    {
+      "value": "keep.new",
+      "label": "keep.new: New Google note."
+    },
+    {
+      "value": "site.new",
+      "label": "site.new: New Google Site."
+    },
+    {
+      "value": "next.new",
+      "label": "next.new: New NextJS project using stackblitz."
+    },
+    {
+      "value": "node.new",
+      "label": "node.new: New Node.js Project using stackblitz."
+    },
+    {
+      "value": "react.new",
+      "label": "react.new: New React project using codeSandbox."
+    },
+    {
+      "value": "ts.new",
+      "label": "ts.new: New Typescript project using codeSandbox."
+    },
+    {
+      "value": "js.new",
+      "label": "js.new: New Javascript project using codeSandbox."
+    },
+    {
+      "value": "vue.new",
+      "label": "vue.new: New Vue project using codeSandbox."
+    },
+    {
+      "value": "nuxt.new",
+      "label": "nuxt.new: New Nuxt project using codeSandbox."
+    },
+    {
+      "value": "ng.new",
+      "label": "ng.new: New Angular project using codeSandbox."
+    },
+    {
+      "value": "csb.new",
+      "label": "csb.new: New codeSandbox project."
+    },
+    {
+      "value": "pen.new",
+      "label": "pen.new: New codePen project."
+    },
+    {
+      "value": "tailwind.new",
+      "label": "tailwind.new: New Tailwind Play page."
+    },
+    {
+      "value": "tailwindcss.new",
+      "label": "tailwindcss.new: New Tailwind Play page"
+    },
+    {
+      "value": "github.new",
+      "label": "github.new: New GitHub repo."
+    },
+    {
+      "value": "repo.new",
+      "label": "repo.new: New Github repo."
+    },
+    {
+      "value": "gist.new",
+      "label": "gist.new: New Github gist."
+    },
+    {
+      "value": "story.new",
+      "label": "story.new: New Medium story."
+    },
+    {
+      "value": "design.new",
+      "label": "design.new: New Canva design."
+    },
+    {
+      "value": "link.new",
+      "label": "link.new: New link using bitly."
+    },
+    {
+      "value": "api.new",
+      "label": "api.new: New Node.js API endpoint using RunKit."
+    },
+    {
+      "value": "webex.new",
+      "label": "webex.new: New meeting room with Cisco Webex."
+    },
+    {
+      "value": "playlist.new",
+      "label": "playlist.new: New Spotify playlist."
+    },
+    {
+      "value": "invoice.new",
+      "label": "invoice.new: New Stripe invoice"
+    },
+    {
+      "value": "reservation.new",
+      "label": "reservation.new: New openTable reservation."
+    },
+    {
+      "value": "flutter.new",
+      "label": "flutter.new: New Flutter project using DartPad."
+    },
+    {
+      "value": "podcast.new",
+      "label": "podcast.new: New podcast episode using Anchor."
+    },
+    {
+      "value": "ionic.new",
+      "label": "ionic.new: New Ionic project using Ionic Framework."
+    },
+    {
+      "value": "diagram.new",
+      "label": "diagram.new: New diagram using Diagrams."
+    },
+    {
+      "value": "pdf.new",
+      "label": "pdf.new: New Acrobat PDF from any Microsoft Office or image file."
+    },
+    {
+      "value": "sign.new",
+      "label": "sign.new: New PDF form that you can fill sign, save and send."
+    },
+    {
+      "value": "jpgtopdf.new",
+      "label": "jpgtopdf.new: New PDF file from JPG."
+    },
+    {
+      "value": "compresspdf.new",
+      "label": "compresspdf.new: New PDF compression."
+    },
+    {
+      "value": "create.new",
+      "label": "create.new: New Spark design."
+    },
+    {
+      "value": "linear.new",
+      "label": "linear.new: New Linear issue."
+    },
+    {
+      "value": "whats.new",
+      "label": "whats.new: Registry for .new shortcuts."
+    },
+    {
+      "value": "workers.new",
+      "label": "workers.new: New Cloudflare worker."
+    },
+    {
+      "value": "tw.new",
+      "label": "tw.new: New Google Sites."
+    },
+    {
+      "value": "sql.new",
+      "label": "sql.new: Write SQL queries for your data in other applications."
+    },
+    {
+      "value": "vso.new",
+      "label": "vso.new: Create a new Visual Studio codespace for your project."
+    },
+    {
+      "value": "deploy.new",
+      "label": "deploy.new: Deploy a new Vercel project from a repository or template. (same as zeit.new)"
+    },
+    {
+      "value": "notion.new",
+      "label": "notion.new: Quickly create a new page in Notion.so"
+    },
+    {
+      "value": "discord.new",
+      "label": "discord.new: Create a new discord server."
+    },
+    {
+      "value": "glitch.new",
+      "label": "glitch.new: Create a new project on Glitch."
+    },
+    {
+      "value": "interview.new",
+      "label": "interview.new: Create a new interview on Hackerearth."
+    },
+    {
+      "value": "database.new",
+      "label": "database.new: Create a new Postgres database on Supabase"
+    },
+    {
+      "value": "member.new",
+      "label": "member.new: Create a new member in your Orbit workspace"
+    },
+    {
+      "value": "dev.new",
+      "label": "dev.new: Deploy a new Railway project"
+    },
+    {
+      "value": "uuid.new",
+      "label": "uuid.new: Generate a new UUID."
+    },
+    {
+      "value": "stay.new",
+      "label": "stay.new: Book a stay."
+    },
+    {
+      "value": "gitlab.new",
+      "label": "gitlab.new: New GitLab project."
+    },
+    {
+      "value": "python.new",
+      "label": "python.new: New Python code-sandbox on CoderPad.io"
+    },
+    {
+      "value": "cpp.new",
+      "label": "cpp.new: New C++ code-sandbox on CoderPad.io"
+    },
+    {
+      "value": "objc.new",
+      "label": "objc.new: New Objective-C code-sandbox on CoderPad.io"
+    },
+    {
+      "value": "kotlin.new",
+      "label": "kotlin.new: New Kotlin code-sandbox on CoderPad.io"
+    },
+    {
+      "value": "pad.new",
+      "label": "pad.new: Create a new CoderPad for technical interviewing"
+    },
+    {
+      "value": "password.new",
+      "label": "password.new: Generate a new strong password"
+    },
+    {
+      "value": "rails.new",
+      "label": "rails.new: Getting started script for Ruby on Rails on macOS"
+    },
+    {
+      "value": "hydrogen.new",
+      "label": "hydrogen.new: Experiment hydrogen a front-end web development framework used for building Shopify custom storefronts (using stackblitz)"
+    },
+    {
+      "value": "rust.new",
+      "label": "rust.new: New Rust code-sandbox."
+    },
+    {
+      "value": "vite.new",
+      "label": "vite.new: New Vite stackblitz"
+    },
+    {
+      "value": "vite.new/react",
+      "label": "vite.new/react: New Vite based React on stackblitz"
+    },
+    {
+      "value": "vitest.new",
+      "label": "vitest.new: New Vitest on stackblitz"
+    },
+    {
+      "value": "remix.new",
+      "label": "remix.new: New Remix on stackblitz"
+    },
+    {
+      "value": "laravel.new",
+      "label": "laravel.new: New Laravel project on the PHPSandbox"
+    },
+    {
+      "value": "job.new",
+      "label": "job.new: Link to https://startup.jobs/"
+    },
+    {
+      "value": "qwik.new",
+      "label": "qwik.new: New Qwik project using stackblitz."
+    },
+    {
+      "value": "demo.new",
+      "label": "demo.new: Starts a new Demodesk meeting."
+    }
+  ]
+}
