@@ -18,7 +18,7 @@ class Result:
 
 class RofiRunner:
     def get_rofi_command() -> str:
-        case_ses = '-i' if Config.get_case_sensitive() else ''
+        case_ses = '' if Config.get_case_sensitive() else '-i'
         options_entry = "\n".join(Config.get_options_labels())
         return f'echo -e "{options_entry}" | rofi -dmenu {case_ses} -p "{Config.get_name()}"'
 
